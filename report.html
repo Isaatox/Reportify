@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Test pour faire une PWA">
+    <link rel="icon" href="assets/icons/icon.ico" type="image/x-icon" />
+    <link href="./assets/style/style.css" rel="stylesheet" />
+    <!--        PWA         -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="black">
+    <meta name="apple-mobile-web-app-status-bar" content="white">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="/assets/icons/icon-96.png">
+    <title>Test-PWA</title>
+</head>
+<body>
+    <header>
+    <a href="index.html">
+        <h1>REPORTIFY</h1>
+    </a>
+    </header>
+    <main>
+        <section>
+            <div class="msg">
+                <p class="msg__perso">Message personnalisé</p>
+                <div class="msg__title">
+                    <span>Créer un rapport</span>
+                </div>
+            </div>
+        </section>
+        <section>
+            <a href="pj.html">
+            <div class="cardType">
+                <span class="cardType__title">Nettoyage</span>
+            </div>
+            </a>
+            <div class="cardType">
+                <span class="cardType__title">Maintenance</span>
+            </div>
+
+            <div class="cardType">
+                <span class="cardType__title">Risque</span>
+            </div>
+
+            <div class="cardType">
+                <span class="cardType__title">Infraction</span>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav class="navBar__bottom">
+            <div><a href="index.html"><img id="svg__cancel" src="assets/img/x-mark.svg" alt="cancel"></a></div>
+        </nav>
+    </footer>
+<script src="app.js"> // ServiceWorker desactivé pour dev </script>    
+</body>
+</html>

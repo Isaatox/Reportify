@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Test pour faire une PWA">
+    <link rel="icon" href="assets/icons/icon.ico" type="image/x-icon" />
+    <link href="./assets/style/style.css" rel="stylesheet" />
+    <!--        PWA         -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="black">
+    <meta name="apple-mobile-web-app-status-bar" content="white">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="/assets/icons/icon-96.png">
+    <title>Test-PWA</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <h1>REPORTIFY</h1>
+        </a>
+    </header>
+    <main>
+        <section>
+            <div class="card">
+                <img id="svg__micro" class="pj__svg" src="assets/img/microphone.svg" alt="micro">
+                <span class="pj__title">Audio_01</span>
+                <div class="pj__desc">
+                    <span>date</span>
+                </div>
+                <div class="card__svg">
+                    <img id="svg__trash" src="assets/img/trash.svg" alt="trash">
+                </div>
+            </div>
+
+            <div class="card">
+                <img id="svg__photo" class="pj__svg" src="assets/img/photo.svg" alt="photo">
+                <span class="pj__title">Audio_01</span>
+                <div class="pj__desc">
+                    <span>date</span>
+                </div>
+                <div class="card__svg">
+                    <img id="svg__trash" src="assets/img/trash.svg" alt="trash">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav class="navBar__bottom">
+            <div><a href="index.html"><img id="svg__cancel" src="assets/img/x-mark.svg" alt="cancel"></a></div>
+            <div><a href="index.html"><img id="svg__photo" src="assets/img/photo.svg" alt="photo"></a></div>
+            <div><a href="index.html"><img id="svg__micro" src="assets/img/microphone.svg" alt="micro"></a></div>
+            <div><a href="index.html"><img id="svg__checked" src="assets/img/check-mark.svg" alt="checked"></a></div>
+        </nav>
+    </footer>
+<script src="app.js"> // ServiceWorker desactivé pour dev </script>    

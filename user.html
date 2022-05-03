@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Test pour faire une PWA">
+    <link rel="icon" href="assets/icons/icon.ico" type="image/x-icon" />
+    <link href="./assets/style/style.css" rel="stylesheet" />
+    <!--        PWA         -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="black">
+    <meta name="apple-mobile-web-app-status-bar" content="white">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="/assets/icons/icon-96.png">
+    <title>Test-PWA</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <h1>REPORTIFY</h1>
+        </a>
+    </header>
+    <main>
+        <section>
+            <form action="">
+                <select class="form__content" name="gender" id="">
+                    <option value="">Gender</option>
+                    <option value="M">Madame</option>
+                    <option value="F">Monsieur</option>
+                    <option value="M">Autre</option>
+                </select>
+
+                <input class="form__content" type="text" placeholder="Nom">
+                <input class="form__content" type="text" placeholder="Prenom">
+                <input class="form__content" type="text" placeholder="Telephone">
+                <div class="form__content">
+                    <input class="form__content_checkbox" type="checkbox">
+
+                    J'accepte que mes données personnelles ci-dessus
+                     soient utilisées par cette application
+                </div>
+                <button class="btn__suppress">Supprimer mon compte</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <nav class="navBar__bottom">
+            <div><a href="index.html"><img id="svg__cancel" src="assets/img/x-mark.svg" alt="cancel"></a></div>
+            <div><a href="index.html"><img id="svg__password" src="assets/img/password.svg" alt="password"></a></div>
+            <div><a href="index.html"><img id="svg__checked" src="assets/img/check-mark.svg" alt="checked"></a></div>
+        </nav>
+    </footer>
+<script src="app.js"> // ServiceWorker desactivé pour dev </script>    
+</body>
+</html>
